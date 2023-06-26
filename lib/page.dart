@@ -9,12 +9,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: GestureDetector(
-          child: Text('Open Popup'),
+          child: const Text('Open Popup'),
           onTap: () {
             showModalBottomSheet(
               context: context,
               builder: (BuildContext context) {
-                return BottomPopup();
+                return const BottomPopup();
               },
             );
           },
