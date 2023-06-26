@@ -35,9 +35,9 @@ class BottomPopup extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
+          const Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   Image(
@@ -47,7 +47,7 @@ class BottomPopup extends StatelessWidget {
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: const [
+                    children: [
                       Flexible(
                         child: Text(
                           "Name:",
