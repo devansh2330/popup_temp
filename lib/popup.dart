@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:poptest/moredetails.dart';
 
 class BottomPopup extends StatelessWidget {
+  const BottomPopup({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -109,7 +112,11 @@ class BottomPopup extends StatelessWidget {
                         style: TextStyle(color: Colors.black),
                       ),
                       onPressed: () {
-                        // Handle button 1 press
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MoreDetails()),
+                        );
                       },
                     ),
                   ),
